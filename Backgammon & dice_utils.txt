@@ -1,0 +1,37 @@
+Dice Rolls Utility And Loader - Summary
+
+Purpose:
+This Project Includes Two Python Scripts That Generate Dice Roll Data And Load It Efficiently For Use In Games Or Simulations.
+
+1. dice_utils.py
+
+Functions:
+- generate_and_save_dice_rolls(filename="dice_rolls.pkl", count=10_000):
+  Generates Count Pairs Of Dice Rolls (Two Numbers From 1 To 6) And Saves Them To A Binary File Using Pickle.
+  If The File Already Exists, The Function Skips Generation To Avoid Overwriting.
+
+- load_dice_rolls(filename="dice_rolls.pkl"):
+  Loads The Saved Dice Roll Data From The File And Returns A Generator That Yields One Dice Roll Pair At A Time, Allowing Efficient Memory Usage.
+
+2. Backgammon.py
+
+Usage:
+- Imports The Utility Functions From dice_utils.py And Uses Them To Generate Dice Rolls (If Not Already Generated) And Then Loads The Data.
+- It Prints The First 5 Dice Rolls As A Demonstration.
+
+Main Function:
+- Calls generate_and_save_dice_rolls() To Ensure Data Is Ready.
+- Iterates Through The Loaded Dice Rolls Using The Generator And Prints The First Five Rolls.
+
+How To Run:
+1. Make Sure Both Files (dice_utils.py And backgammon.py) Are In The Same Directory.
+2. Run The Command In Terminal Or VSCode Terminal:
+   python backgammon.py
+
+3. The Program Will Generate Dice Rolls If Needed, Then Print The First Five Dice Roll Pairs.
+
+Notes:
+- Using A Generator In load_dice_rolls Improves Memory Efficiency By Yielding Dice Rolls One By One Instead Of Loading All At Once.
+- The Saved File dice_rolls.pkl Is A Binary File Created By Pickle And Should Be Kept In The Same Folder For Loading.
+
+Thank You. 
