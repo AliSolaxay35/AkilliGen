@@ -1,0 +1,34 @@
+Title: Snake And Ladder Game Instructions
+
+1. File Name:
+   - snake_game.py
+
+2. Purpose:
+   - Implements A Classic Snake And Ladder Game In The Terminal Using Python.
+   - Supports Saving And Loading Game Progress With Pickle.
+
+3. Features:
+   - Dice Rolls Generated Using A Generator.
+   - Game State Is Saved To 'game.pkl'.
+   - Players Encounter Snakes And Ladders Based On Classic Rules.
+   - Supports Resuming From Last Saved State.
+
+4. How To Run:
+   - Open Terminal Or Command Prompt.
+   - Navigate To The Folder Containing 'snake_game.py'.
+   - Run The Following Command:
+     ```bash
+     python snake_game.py
+     ```
+
+5. GamePlay:
+   - On First Run, Enter Player Names Separated By Commas (e.g., Ali,Sara,Mohammad).
+   - Players Take Turns Rolling The Dice By Pressing Enter.
+   - If A Player Reaches Square 100 Exactly, They Win.
+   - The Game Is Saved After Each Turn And Will Resume If Re-Run.
+
+6. Notes:
+   - If You Want To Start A Fresh Game, Delete 'game.pkl' From The Folder.
+   - The Game Uses A Generator For Infinite Dice Rolls.
+
+Thank You.   
